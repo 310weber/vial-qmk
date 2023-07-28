@@ -59,22 +59,29 @@
 #define WS2812_DI_PIN C7
 #ifdef  WS2812_DI_PIN
 #define RGBLED_NUM 8
-#define RGBLIGHT_HUE_STEP 16
-#define RGBLIGHT_SAT_STEP 16
-#define RGBLIGHT_VAL_STEP 16
+#define RGBLIGHT_HUE_STEP 4         // Step size NOT number of steps (smaller = more steps)
+#define RGBLIGHT_SAT_STEP 17
+#define RGBLIGHT_VAL_STEP 9
 #define RGBLIGHT_SLEEP
+
 /*== choose which animations to enable ==*/
-#define RGBLIGHT_EFFECT_ALTERNATING
+#undef RGBLIGHT_EFFECT_ALTERNATING
 #define RGBLIGHT_EFFECT_BREATHING
-//#define RGBLIGHT_EFFECT_CHRISTMAS
-#define RGBLIGHT_EFFECT_KNIGHT
+#undef RGBLIGHT_EFFECT_CHRISTMAS
+#undef RGBLIGHT_EFFECT_KNIGHT
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-//#define RGBLIGHT_EFFECT_RGB_TEST
+#undef RGBLIGHT_EFFECT_RGB_TEST
 #define RGBLIGHT_EFFECT_SNAKE
 #define RGBLIGHT_EFFECT_STATIC_GRADIENT
 #define RGBLIGHT_EFFECT_TWINKLE
 /*== end animation list ==*/
+
+#define RGBLIGHT_DEFAULT_MODE	RGBLIGHT_MODE_STATIC_LIGHT	    // The default mode to use upon clearing the EEPROM
+#define RGBLIGHT_DEFAULT_HUE	100                             // (blue green) The default hue to use upon clearing the EEPROM
+#define RGBLIGHT_DEFAULT_SAT	UINT8_MAX                       // (255) The default saturation to use upon clearing the EEPROM
+#define RGBLIGHT_DEFAULT_VAL	RGBLIGHT_LIMIT_VAL	            // The default value (brightness) to use upon clearing the EEPROM
+#define RGBLIGHT_DEFAULT_SPD	0	                            // The default speed to use upon clearing the EEPROM
 #endif
 
 /* Indicator LEDs */
