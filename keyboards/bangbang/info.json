@@ -1,0 +1,8 @@
+{
+  "manufacturer": "BangBang Boards",
+  "maintainer": "310weber",
+  "URL": "bangbangboards.ca",
+  "usb": {
+    "vid": "0x2121"
+  }
+}
