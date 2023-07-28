@@ -33,7 +33,3 @@ DEFAULT_FOLDER = bangbang/bangbang65/ver1
 
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 #OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
-
-
-# *** ENABLED FOR TESTING ONLY - remove before shipping ***
-VIAL_INSECURE = yes
