@@ -16,8 +16,6 @@
 
 #pragma once
 
-#include "config_common.h"
-
 /* USB Device descriptor parameter */
 // #define VENDOR_ID       0x2121      /* "!!" = BangBang */
 // #define PRODUCT_ID      0x6000
@@ -58,9 +56,8 @@
 )
 
 /* RGB backlighting */
-#define RGB_DI_PIN C7
-#ifdef  RGB_DI_PIN
-#define RGBLIGHT_ANIMATIONS
+#define WS2812_DI_PIN C7
+#ifdef  WS2812_DI_PIN
 #define RGBLED_NUM 8
 #define RGBLIGHT_HUE_STEP 16
 #define RGBLIGHT_SAT_STEP 16

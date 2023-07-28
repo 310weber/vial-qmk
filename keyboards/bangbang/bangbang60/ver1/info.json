@@ -10,8 +10,8 @@
     "rows": ["F7", "F6", "F4", "F1", "F0"]
   },
   "usb": {
-    "device_ver": "0x0001",
-    "pid": "0x6000"
+    "pid": "0x6000",
+    "device_ver": "1.0.0"
   },
   "layouts": {
     "LAYOUT_bangbang60": {

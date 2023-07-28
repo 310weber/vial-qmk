@@ -10,8 +10,8 @@
     "rows": ["B6", "B5", "B4", "D7", "D6"]
   },
   "usb": {
-    "device_ver": "0x0002",
-    "pid": "0x6000"
+    "pid": "0x6000",
+    "device_version": "2.0.0"
   },
   "rgblight": {
     "led_count": 8,
