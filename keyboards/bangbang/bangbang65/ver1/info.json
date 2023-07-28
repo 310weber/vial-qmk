@@ -3,8 +3,8 @@
   "height": 5,
   "width": 13,
   "usb": {
-    "device_ver": "0x0001",
-    "pid": "0x6500"
+    "pid": "0x6500",
+    "device_version": "1.0.0"
   },
   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
