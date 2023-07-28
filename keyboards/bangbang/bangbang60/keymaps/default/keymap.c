@@ -41,8 +41,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_RS] = LAYOUT(	/* [> RAISE <] */
 		KC_TRNS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_NO,
-		KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_HOME, KC_UP,   KC_END,  KC_NO,   KC_NO,   KC_NO,   KC_NO,
-		KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_NO,   KC_TRNS,
+		KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_PGUP, KC_HOME, KC_UP,   KC_END,  KC_PGUP, KC_NO,   KC_NO,   KC_NO,
+		KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, KC_NO,   KC_TRNS,
 		KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS,
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO,   KC_NO,            KC_TRNS, KC_DEL,  MO(_RL), KC_TRNS, KC_TRNS, TG(_NP)
 		),
@@ -72,10 +72,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		),
 };
 
+
+/* Encoder rotation mapping */
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [_QW] =   { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
-    [_RS] =   { ENCODER_CCW_CW(KC_TRNS,  KC_TRNS) },
+    [_RS] =   { ENCODER_CCW_CW(C(S(KC_TAB)),  LCTL(KC_TAB)) },
     [_LW] =   { ENCODER_CCW_CW(KC_TRNS,  KC_TRNS) },
     [_RL] =   { ENCODER_CCW_CW(RGB_RMOD, RGB_MOD) },
     [_NP] =   { ENCODER_CCW_CW(KC_NO,    KC_NO  ) }
