@@ -6,6 +6,34 @@
     "pid": "0x6500",
     "device_version": "1.0.0"
   },
+
+  "processor": "STM32F401",
+  "board": "GENERIC_STM32_F401XC",
+  "bootloader": "stm32-dfu",
+  
+  "features":{
+    "audio": false,
+    "backlight": false,
+    "bluetooth": false,
+    "bootmagic": true,
+    "command": false,
+    "console": false,
+    "encoder": true,
+    "extrakey": true,
+    "lto": true,
+    "mousekey": false,
+    "nkro": false,
+    "rgb_matrix": false,
+    "rgblight": true,
+    "sleep_led": true
+  },
+
+  "ws2812": {
+    "driver": "pwm"
+  }
+
+
+
   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
     "Base_Layout":"LAYOUT_base",
