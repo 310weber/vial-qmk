@@ -2,28 +2,43 @@
   "keyboard_name": "BangBang60 v2",
   "height": 5,
   "width": 13,
-  "debounce": 5,
-  "processor": "atmega32u4",
-  "diode_direction": "COL2ROW",
-  "matrix_pins": {
-    "cols": ["F0", "F1", "F4", "F5", "F6", "F7", "D4", "D5", "D3", "D2", "D1", "D0", "B7"],
-    "rows": ["B6", "B5", "B4", "D7", "D6"]
-  },
-  "usb": {
+   "usb": {
     "pid": "0x6000",
     "device_version": "2.0.0"
   },
-  "rgblight": {
-    "led_count": 8,
-    "pin": "C7",
-    "hue_steps": 16,
-    "saturation_steps": 16,
-    "brightness_steps": 16,
-    "sleep": false
-    "animations": {
-        "all": true
-    }
-  }
+ 
+  "processor": "atmega32u4",
+  "bootloader": "caterina",
+
+  "features":{
+    "bootmagic": false,
+    "command": false,
+    "console": false,
+    "encoder": true,
+    "extrakey": true,
+    "mousekey": false,
+    "nkro": false,
+    "rgblight": true,
+    "sleep_led": false
+  },
+
+  "build": {
+    "firmware_format": "hex",
+    "lto": true
+  },
+
+  "encoder":{
+    "rotary":[
+      {"pin_a": "B0", "pin_b": "E6", "resolution": 2}
+    ]
+  },
+
+  "indicators": {
+    "caps_lock": "B1",
+    "num_lock":  "C6"
+  },
+ 
+
   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
     "Base_Layout":"LAYOUT_base",
@@ -98,5 +113,36 @@
         { "label": "Ctrl", "matrix": [4, 11], "x": 13.25, "y": 4 }
       ]
     }
+  },
+
+  "diode_direction": "COL2ROW",
+  "matrix_pins": {
+    "cols": ["F0", "F1", "F4", "F5", "F6", "F7", "D4", "D5", "D3", "D2", "D1", "D0", "B7"],
+    "rows": ["B6", "B5", "B4", "D7", "D6"]
+  },
+
+  "rgblight": {
+    "led_count": 8,
+    "animations": {
+      "alternating": false,
+      "breathing": true,
+      "christmas": false,
+      "knight": false,
+      "rainbow_mood": true,
+      "rainbow_swirl": true,
+      "rgb_test": false, 
+      "snake": true,
+      "static_gradient": true,
+      "twinkle": true
+    },
+    "sleep": true,
+    "hue_steps": 4,
+    "saturation_steps": 17,
+    "brightness_steps": 9
+},
+
+  "ws2812": {
+    "pin": "C7"
   }
+
 }
