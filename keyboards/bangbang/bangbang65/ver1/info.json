@@ -20,7 +20,6 @@
     "console": false,
     "encoder": true,
     "extrakey": true,
-    "lto": true,
     "mousekey": false,
     "nkro": false,
     "rgb_matrix": false,
@@ -28,16 +27,27 @@
     "sleep_led": true
   },
 
-  "ws2812": {
-    "driver": "pwm"
-  }
+  "build": {
+    "firmware_format": "bin",
+    "lto": true
+  },
 
+  "encoder":{
+    "rotary":[
+      {"pin_a": "C10", "pin_b": "C11", "resolution": 2}
+    ]
+  },
 
-
-  "layout_aliases":{
+  "indicators": {
+    "caps_lock": "A1",
+    "num_lock":  "A2"
+  },
+ 
+   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
-    "Base_Layout":"LAYOUT_base",
-  }
+    "Base_Layout":"LAYOUT_base"
+  },
+
   "layouts": {
     "LAYOUT_base": {
       "layout": [
@@ -111,5 +121,37 @@
         { "label": "Right", "matrix": [9, 7], "x": 15.5, "y": 4.25 }
       ]
     }
+  },
+
+  "diode_direction": "COL2ROW",
+  "matrix_pins": {
+      "cols": ["B10", "B1",  "B0", "C5", "C4", "A7",  "A6",  "B9"],
+      "rows": ["B13", "B12", "A5", "A4", "A3", "A15", "C12", "C0", "C1", "C2"]
+  },
+ 
+  "rgblight": {
+    "led_count": 13,
+    "animations": {
+      "alternating": false,
+      "breathing": true,
+      "christmas": false,
+      "knight": false,
+      "rainbow_mood": true,
+      "rainbow_swirl": true,
+      "rgb_test": false, 
+      "snake": true,
+      "static_gradient": true,
+      "twinkle": true
+    },
+    "sleep": true,
+    "hue_steps": 4,
+    "saturation_steps": 17,
+    "brightness_steps": 9
+  },
+
+  "ws2812": {
+    "pin": "B14",
+    "driver": "pwm"
   }
+
 }
