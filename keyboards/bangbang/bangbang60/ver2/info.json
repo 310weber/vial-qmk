@@ -2,7 +2,7 @@
   "keyboard_name": "BangBang60 v2",
   "height": 5,
   "width": 13,
-   "usb": {
+  "usb": {
     "pid": "0x6000",
     "device_version": "2.0.0"
   },
