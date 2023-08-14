@@ -12,9 +12,6 @@
   "bootloader": "stm32-dfu",
   
   "features":{
-    "audio": false,
-    "backlight": false,
-    "bluetooth": false,
     "bootmagic": true,
     "command": false,
     "console": false,
@@ -22,9 +19,8 @@
     "extrakey": true,
     "mousekey": false,
     "nkro": false,
-    "rgb_matrix": false,
     "rgblight": true,
-    "sleep_led": true
+    "sleep_led": false
   },
 
   "build": {
