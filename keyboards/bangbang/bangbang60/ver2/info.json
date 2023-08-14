@@ -38,11 +38,11 @@
     "num_lock":  "C6"
   },
  
-
   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
-    "Base_Layout":"LAYOUT_base",
-  }
+    "Base_Layout":"LAYOUT_base"
+  },
+
   "layouts": {
     "LAYOUT_base": {
       "layout": [
