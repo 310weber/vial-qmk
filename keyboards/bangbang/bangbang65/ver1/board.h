@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include_next "board.h"
+#include_next <board.h>
 
 /* Set crystal frequency from  8 MHz (F401 GENERIC default) to 16 MHz */
 #undef STM32_HSECLK

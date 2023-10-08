@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include_next "mcuconf.h"
+#include_next <mcuconf.h>
 
 /* Set PLL M divider from 4 (F401 GENERIC default) to 8, because of 16 MHz crystal on board */
 #undef STM32_PLLM_VALUE
