@@ -1,0 +1,16 @@
+{
+    "name": "BangBang1",
+    "vendorId": "0x2121",
+    "productId": "0x0100",
+    "lighting": "qmk_rgblight",
+    "matrix": { "rows": 1, "cols": 1 },
+    "layouts": {
+        "keymap": [
+            [
+                {"c": "#777777"},
+                "0,0",
+                "0,0\n\n\n\n\n\n\n\n\ne"
+            ]
+        ]
+    }
+}

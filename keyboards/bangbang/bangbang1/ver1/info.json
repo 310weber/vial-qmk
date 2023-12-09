@@ -1,0 +1,75 @@
+{
+  "keyboard_name": "BangBang1 v1",
+  "height": 1,
+  "width": 1,
+  "usb": {
+    "pid": "0x0100",
+    "device_version": "1.0.0"
+  },
+
+  "processor": "RP2040",
+  "board": "GENERIC_RP_RP2040",
+  "bootloader": "rp2040",
+  
+  "features":{
+    "bootmagic": false,
+    "command": false,
+    "console": false,
+    "encoder": false,
+    "extrakey": true,
+    "mousekey": true,
+    "nkro": false,
+    "rgblight": true,
+    "sleep_led": false
+  },
+
+  "build": {
+    "firmware_format": "bin",
+    "lto": true
+  },
+ 
+  "layout_aliases":{
+    "KEYMAP":"LAYOUT_base",
+    "Base_Layout":"LAYOUT_base"
+  },
+
+  "layouts": {
+    "LAYOUT_base": {
+      "layout": [
+        { "label": "6", "matrix": [0, 0], "x": 0, "y": 0 }
+      ]
+    }
+  },
+
+  "diode_direction": "COL2ROW",
+  "matrix_pins": {
+      "cols": ["GP10"],
+      "rows": ["GP12"]
+  },
+ 
+  "rgblight": {
+    "led_count": 1,
+    "animations": {
+      "alternating": false,
+      "breathing": true,
+      "christmas": false,
+      "knight": false,
+      "rainbow_mood": true,
+      "rainbow_swirl": true,
+      "rgb_test": false, 
+      "snake": true,
+      "static_gradient": true,
+      "twinkle": true
+    },
+    "sleep": true,
+    "hue_steps": 4,
+    "saturation_steps": 17,
+    "brightness_steps": 9
+  },
+
+  "ws2812": {
+    "pin": "GP16",
+    "driver": "vendor"
+  }
+
+}
