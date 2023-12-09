@@ -16,14 +16,6 @@
 
 #include QMK_KEYBOARD_H
 
-// Each layer gets a name for readability, which is then used in the keymap matrix below.
-// The underscores don't mean anything - you can have a layer called STUFF or any other name.
-enum {
-    _QW = 0
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[_QW] = LAYOUT( /* QWERTY */
-		KC_6
-	),
+	LAYOUT_base(KC_6)
 };

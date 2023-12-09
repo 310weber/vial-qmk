@@ -12,7 +12,6 @@
 #define VIAL_UNLOCK_COMBO_COLS { 0, 0 }
 
 /* Options to save memory */
-#define DYNAMIC_KEYMAP_LAYER_COUNT 1        // Match to number of layers if > 4
 #define VIAL_TAP_DANCE_ENTRIES 1
 #define VIAL_COMBO_ENTRIES 1
 

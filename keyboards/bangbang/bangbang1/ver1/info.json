@@ -23,11 +23,6 @@
     "sleep_led": false
   },
 
-  "build": {
-    "firmware_format": "bin",
-    "lto": true
-  },
- 
   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
     "Base_Layout":"LAYOUT_base"
