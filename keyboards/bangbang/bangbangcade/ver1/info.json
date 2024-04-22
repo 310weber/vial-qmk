@@ -1,0 +1,65 @@
+{
+  "keyboard_name": "BangBangCade v1",
+  "height": 1,
+  "width": 20,
+  "usb": {
+    "pid": "0x3145",
+    "device_version": "1.0.0"
+  },
+
+  "processor": "RP2040",
+  "board": "GENERIC_RP_RP2040",
+  "bootloader": "rp2040",
+  
+  "features":{
+    "bootmagic":  false,
+    "command":    false,
+    "console":    false,
+    "encoder":    false,
+    "extrakey":   true,
+    "mousekey":   false,
+    "nkro":       true,
+    "rgblight":   false,
+    "sleep_led":  false
+  },
+
+  "layout_aliases":{
+    "KEYMAP":"LAYOUT_base",
+    "Base_Layout":"LAYOUT_base"
+  },
+
+  "layouts": {
+    "LAYOUT_base": {
+      "layout": [
+        { "label": "1RIGHT", "matrix": [0,  0], "x": 2, "y": 2 },
+        { "label": "1LEFT",  "matrix": [0,  1], "x": 0, "y": 2 },
+        { "label": "1UP",    "matrix": [0,  2], "x": 1, "y": 1 },
+        { "label": "1DOWN",  "matrix": [0,  3], "x": 1, "y": 3 },
+        { "label": "1SW1",   "matrix": [0,  4], "x": 3.5, "y": 1.5 },
+        { "label": "1SW2",   "matrix": [0,  5], "x": 4.75, "y": 1.5 },
+        { "label": "1SW3",   "matrix": [0,  6], "x": 3.5, "y": 2.75 },
+        { "label": "1SW4",   "matrix": [0,  7], "x": 4.75, "y": 2.75 },
+        { "label": "2RIGHT", "matrix": [0,  8], "x": 9.25, "y": 2 },
+        { "label": "2LEFT",  "matrix": [0,  9], "x": 7.25, "y": 2 },
+        { "label": "2UP",    "matrix": [0, 10], "x": 8.25, "y": 1 },
+        { "label": "2DOWN",  "matrix": [0, 11], "x": 8.25, "y": 3 },
+        { "label": "2SW1",   "matrix": [0, 12], "x": 10.75, "y": 1.5 },
+        { "label": "2SW2",   "matrix": [0, 13], "x": 12, "y": 1.5 },
+        { "label": "2SW3",   "matrix": [0, 14], "x": 10.75, "y": 2.75 },
+        { "label": "2SW4",   "matrix": [0, 15], "x": 12, "y": 2.75 },
+        { "label": "1START", "matrix": [0, 16], "x": 5, "y": 0 },
+        { "label": "2START", "matrix": [0, 17], "x": 7, "y": 0 },
+        { "label": "COIN",   "matrix": [0, 18], "x": 6, "y": 4 },
+        { "label": "EXIT",   "matrix": [0, 19], "x": 6, "y": 0 }
+      ]
+    }
+  },
+
+  "diode_direction": "COL2ROW",
+  "matrix_pins": {
+    "direct": [
+      ["GP18", "GP19", "GP20", "GP21", "GP22", "GP26", "GP27", "GP28", "GP13", "GP12", "GP11", "GP10", "GP9", "GP8", "GP7", "GP6", "GP5", "GP4", "GP3", "GP2"]
+    ]
+  }
+ 
+}
