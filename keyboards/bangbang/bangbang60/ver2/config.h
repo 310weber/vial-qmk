@@ -20,6 +20,9 @@
  * Below settings are not defined in info.json.
  */
 
+/* Grave Escape Config */
+#define GRAVE_ESC_CTRL_OVERRIDE     // Always send Escape if Control is pressed
+
 #define RGBLIGHT_DEFAULT_MODE	RGBLIGHT_MODE_STATIC_LIGHT
 #define RGBLIGHT_DEFAULT_HUE	100
 #define RGBLIGHT_DEFAULT_SAT	255

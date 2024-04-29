@@ -21,6 +21,9 @@
  * Below settings are not defined in info.json.
  */
 
+/* Grave Escape Config */
+#define GRAVE_ESC_CTRL_OVERRIDE     // Always send Escape if Control is pressed
+
 /* RGB backlight driver config */
 #define WS2812_PWM_COMPLEMENTARY_OUTPUT
 #define WS2812_PWM_DRIVER PWMD1
