@@ -23,6 +23,10 @@
     "sleep_led": false
   },
 
+  "qmk": {
+    "tap_keycode_delay": 15
+  },
+
   "build": {
     "firmware_format": "bin",
     "lto": true

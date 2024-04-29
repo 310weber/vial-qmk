@@ -23,6 +23,10 @@
     "sleep_led":  false
   },
 
+  "qmk": {
+    "tap_keycode_delay": 15
+  },
+
   "layout_aliases":{
     "KEYMAP":"LAYOUT_base",
     "Base_Layout":"LAYOUT_base"
